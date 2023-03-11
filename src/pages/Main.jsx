@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Main() {
     return (
-        <div className='grid grid-cols-7 grid-rows-2 pt-11'>
+        <div className='grid grid-cols-7 grid-rows-2 pt-11 pb-11'>
             <form className='col-span-3 row-span-1 col-start-3'>
                 <div className="mb-6">
                     <label HtmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact name</label>
