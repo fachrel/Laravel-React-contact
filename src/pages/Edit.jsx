@@ -9,9 +9,9 @@ export default function Edit() {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/users/${id}`).then((res) => {
-          setName(res.data.name);
-          setPhone(res.data.phone);
+        axios.get(`http://localhost:8000/api/contacts/${id}`).then((res) => {
+          setName(res.data.data.name);
+          setPhone(res.data.data.phone);
           console.log(res)
         });
       }, []);
@@ -25,7 +25,7 @@ export default function Edit() {
 
       function Update(e) {
         e.preventDefault();
-        axios.put(`http://localhost:8000/users/${id}`, data).then(navigate("/"));
+        axios.patch(`http://localhost:8000/api/contacts/${id}`, data).then(navigate("/"));
       }
   return (
     <div>

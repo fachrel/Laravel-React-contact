@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "name": "Curt Hendricks",
-      "phone": "12345678910",
+      "name": "Curt Hendricks the third",
+      "phone": "12345678910sfsf",
       "id": 8
     },
     {
@@ -72,22 +72,10 @@
       "id": 20
     },
     {
-      "name": "adawd",
+      "name": "mr sd",
       "email": "",
-      "phone": "adawdaa",
+      "phone": "2323232323",
       "id": 21
-    },
-    {
-      "name": "awdawdadaa",
-      "email": "",
-      "phone": "wdadadad",
-      "id": 22
-    },
-    {
-      "name": "awdawdawd",
-      "email": "",
-      "phone": "daawdadw",
-      "id": 23
     }
   ]
 }

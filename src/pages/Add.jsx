@@ -4,19 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 export default function Add() {
     const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
   
     const navigate = useNavigate();
     const data = {
       name: name,
-      email: email,
       phone: phone,
     };
-  
+    console.log(data)
     function submitForm(e) {
       e.preventDefault();
-      axios.post("http://localhost:8000/users", data).then(navigate("/"));
+      axios.post("http://localhost:8000/api/contacts", data).then(navigate("/"));
     }
   return (
     <div>
